@@ -1,0 +1,83 @@
+body{
+    background-color: whitesmoke;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:0px 0px 8px #c5649b;
+    border: none;
+    height: 40px;
+    width: 50%;
+    transition: border-color 0.3s ease;
+}
+
+input:hover{
+    border: 1px solid #c50170;
+}
+
+input:focus{
+    box-shadow:0px 0px 17px #c5649b;
+}
+
+
+#divEmail{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#divPassword{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#divContainerLogin {
+    width: 550px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 30px #c50170;
+    border-radius: 25px;
+}
+
+#divContainerCompanyInformation{
+    width: 250px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 124%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 30px #c50170;
+    border-radius: 25px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+
+::-webkit-input-placeholder {
+    color: #c5649b; 
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
