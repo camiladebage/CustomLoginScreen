@@ -12,12 +12,22 @@ input:focus {
 
 #imgLogo {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 20%;
     transform: translate(-50%, -50%);
-    transform: skew(30deg, 20deg);
+    transform: skew(10deg, 20deg);
     width: 150px;
     height: 200px;
+}
+
+#lblSlogan{
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    color: black;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
 }
 
 #divEmail {
@@ -116,10 +126,12 @@ input:focus {
     height: 40px;
     width: 50%;
     transition: border-color 0.3s ease;
+    outline: none;
 }
 
 ::-webkit-input-placeholder {
     color: black;
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 135px;
 }
