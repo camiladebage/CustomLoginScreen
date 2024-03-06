@@ -1,47 +1,56 @@
-body{
-    background-color: whitesmoke;
+body {
+    background-color: #252423;
 }
 
-input{
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow:0px 0px 8px #c5649b;
-    border: none;
-    height: 40px;
-    width: 50%;
-    transition: border-color 0.3s ease;
+input:hover {
+    border: 1px solid #000000;
 }
 
-input:hover{
-    border: 1px solid #c50170;
+input:focus {
+    box-shadow: 0px 0px 17px #4e4d4e;
 }
 
-input:focus{
-    box-shadow:0px 0px 17px #c5649b;
+#imgLogo {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    transform: skew(30deg, 20deg);
+    width: 150px;
+    height: 200px;
 }
 
-
-#divEmail{
+#divEmail {
     position: absolute;
     top: 30%;
     left: 50%;
-    bottom: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    height: 50%;
+    height: 16.2%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#divPassword{
+#divPassword {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 16.2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#divSave {
     position: absolute;
     top: 70%;
     left: 50%;
-    bottom: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    height: 50%;
+    height: 16.2%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,19 +64,43 @@ input:focus{
     left: 40%;
     bottom: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 30px #c50170;
-    border-radius: 25px;
+    box-shadow: 0px 0px 40px #000000;
+    border-radius: 10px;
+    background-color: white;
 }
 
-#divContainerCompanyInformation{
+#divContainerCompanyInformation {
     width: 250px;
     height: 450px;
     position: absolute;
     top: 50%;
     left: 124%;
     transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 30px #c50170;
-    border-radius: 25px;
+    box-shadow: 0px 0px 30px #000000;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#btnSave {
+    background-color: #000000;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 220px;
+    height: 40px;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 17px #f4c0dd;
+    font-size: 15px;
+}
+
+#btnSave:hover {
+    background-color: #4e4d4e;
+    font-size: 16px;
+}
+
+#btnSave:focus {
+    background-color: #b0b0b0;
+    border: 1px solid #b0b0b0;
 }
 
 .container {
@@ -75,9 +108,18 @@ input:focus{
     align-items: center;
 }
 
+.inputLogin {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px #4e4d4e;
+    border: none;
+    height: 40px;
+    width: 50%;
+    transition: border-color 0.3s ease;
+}
 
 ::-webkit-input-placeholder {
-    color: #c5649b; 
+    color: black;
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
+}
