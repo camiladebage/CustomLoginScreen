@@ -10,6 +10,14 @@ input:focus {
     box-shadow: 0px 0px 17px #4e4d4e;
 }
 
+input:focus+.placeholder,
+input:not(:placeholder-shown)+.placeholder {
+    top: -22px;
+    left: 5px;
+    font-size: 14px;
+    color: black;
+}
+
 label {
     color: black;
     font-size: 15px;
@@ -23,12 +31,8 @@ a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-input:focus+.placeholder,
-input:not(:placeholder-shown)+.placeholder {
-    top: -22px;
-    left: 5px;
-    font-size: 14px;
-    color: black;
+figure{
+    margin-left: 0px;
 }
 
 .container {
@@ -87,20 +91,11 @@ input:not(:placeholder-shown)+.placeholder {
     left: 39%;
 }
 
-
 #lblLoginTitle{
     color: black;
     font-size: 42px;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-#figLoginOptions:hover{
-    width:57px ;
-    box-shadow: 0px 0px 17px #4e4d4e;
-}
-
-figure{
-    margin-left: 0px;
 }
 
 #figFace{
