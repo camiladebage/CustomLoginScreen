@@ -5,15 +5,36 @@
 </head>
 
 <body>
-    <div id="divContainerLogin">
-        <div id="divEmail">
-            <input id="inputEmail" class="inputLogin" type="text" id="email" placeholder="Digite seu email">
+    <div id="divContainer">
+        <div id="divLoginTitle" class="input-container">
+            <label id="lblLoginTitle">Entrar</label>
         </div>
-        <div id="divPassword">
-            <input id="inputPassword" class="inputLogin" type="password" id="password" placeholder="Digite sua senha">
+        <div id="divEmail" class="input-container">
+            <input id="inputEmail" class="inputLogin" type="text" id="email" placeholder="">
+            <label class="placeholder">Digite seu email</label>
+        </div>
+        <div id="divPassword" class="input-container">
+            <input id="inputPassword" class="inputLogin" type="password" id="password" placeholder="">
+            <label class="placeholder">Digite sua senha</label>
         </div>
         <div id="divSave">
             <button id="btnSave">Entrar</button>
+        </div>
+        <div id="divForgotPass">
+            <a href="#" id="aForgotPass">Esqueceu sua senha?</a>
+        </div>
+        <div id="divLoginOptionsTitle">
+            <label id="lblLoginOptions">Escolha uma opção para entrar</a>
+        </div>
+        <div id="divLoginOptions">
+            <figure id="figFace" class="figLoginOptions">
+                <a id="aFace" class="aLoginOptions" href="#"><img id="imgFace" class="imgLoginOptions"
+                        src="facebook.png"></a>
+            </figure>
+            <figure id="figGoogle" class="figLoginOptions">
+                <a id="aGoogle" class="aLoginOptions" href="#"><img id="imgGoogle" class="imgLoginOptions"
+                        src="google.png"></a>
+            </figure>
         </div>
         <div id="divContainerCompanyInformation">
             <figure>
@@ -22,7 +43,7 @@
             <label id="lblSlogan">O fluxo rápido para sua empresa</label>
         </div>
     </div>
-    
+
 </body>
 
 </html>

@@ -10,53 +10,114 @@ input:focus {
     box-shadow: 0px 0px 17px #4e4d4e;
 }
 
-#imgLogo {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    transform: skew(10deg, 20deg);
-    width: 150px;
-    height: 200px;
-}
-
-#lblSlogan{
-    position: absolute;
-    top: 75%;
-    left: 15%;
+label {
     color: black;
-    font-size: 12px;
+    font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
+    margin-bottom: 135px;
 }
 
-#divEmail {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 16.2%;
+a{
+    color: black;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input:focus+.placeholder,
+input:not(:placeholder-shown)+.placeholder {
+    top: -22px;
+    left: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+.container {
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+
+.inputLogin {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px #4e4d4e;
+    border: none;
+    height: 40px;
+    width: 50%;
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+.input-container {
+    position: relative;
+    margin: 55px;
+    top: 15%;
+    left: 60%;
+    transform: translate(-50%, -50%);/*https://developer.mozilla.org/en-US/docs/Web/CSS/transform*/
+}
+
+.placeholder {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.imgLoginOptions{
+    width: 35px;
+}
+
+#divLoginOptions{
+    position: absolute;
+    top: 83%;
+    left: 30%;
+    display: grid;
+    grid-template-columns: 120px 120px; 
+    align-items: start;
+}
+
+#divLoginOptionsTitle{
+    position: absolute;
+    top: 77%;
+    left: 32%;
+}
+
+#divLoginTitle{
+    position: absolute;
+    top: -2%;
+    left: 39%;
+}
+
+
+#lblLoginTitle{
+    color: black;
+    font-size: 42px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#figLoginOptions:hover{
+    width:57px ;
+    box-shadow: 0px 0px 17px #4e4d4e;
+}
+
+figure{
+    margin-left: 0px;
+}
+
+#figFace{
+    margin-left:70px;
 }
 
 #divPassword {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 14%;
+    left: 60%;
     transform: translate(-50%, -50%);
     width: 80%;
     height: 16.2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+} 
 
 #divSave {
     position: absolute;
-    top: 70%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
@@ -66,7 +127,19 @@ input:focus {
     align-items: center;
 }
 
-#divContainerLogin {
+#divForgotPass {
+    position: absolute;
+    top: 67%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 16.2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#divContainer {
     width: 550px;
     height: 450px;
     position: absolute;
@@ -99,7 +172,7 @@ input:focus {
     height: 40px;
     color: white;
     border: none;
-    box-shadow: 0px 0px 17px #f4c0dd;
+    box-shadow: 0px 0px 17px #4e4d4e;
     font-size: 15px;
 }
 
@@ -113,20 +186,24 @@ input:focus {
     border: 1px solid #b0b0b0;
 }
 
-.container {
-    display: flex;
-    align-items: center;
+#imgLogo {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    transform: skew(10deg, 20deg);
+    width: 150px;
+    height: 200px;
 }
 
-.inputLogin {
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 8px #4e4d4e;
-    border: none;
-    height: 40px;
-    width: 50%;
-    transition: border-color 0.3s ease;
-    outline: none;
+#lblSlogan {
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    color: black;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
 }
 
 ::-webkit-input-placeholder {
